@@ -1,0 +1,63 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplify-awsserverlessairline-deve-33206-authRole",
+			"UnauthRoleArn": "arn:aws:iam::532556338238:role/amplify-awsserverlessairline-deve-33206-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::532556338238:role/amplify-awsserverlessairline-deve-33206-authRole",
+			"Region": "ap-southeast-1",
+			"DeploymentBucketName": "amplify-awsserverlessairline-deve-33206-deployment",
+			"UnauthRoleName": "amplify-awsserverlessairline-deve-33206-unauthRole",
+			"StackName": "amplify-awsserverlessairline-deve-33206",
+			"StackId": "arn:aws:cloudformation:ap-southeast-1:532556338238:stack/amplify-awsserverlessairline-deve-33206/aeb38bb0-7ec9-11ea-994a-02da6099db56",
+			"AmplifyAppId": "d1d1jf6892w50i"
+		}
+	},
+	"auth": {
+		"awsserverlessairline44ea6421": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false,
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-awsserverlessairline-deve-33206-deployment/amplify-cfn-templates/auth/awsserverlessairline44ea6421-cloudformation-template.yml",
+				"logicalId": "authawsserverlessairline44ea6421"
+			},
+			"lastPushTimeStamp": "2020-04-15T03:38:11.635Z",
+			"output": {
+				"AppClientSecret": "19ot9jngsugpo5hrhrf91ed6rini53h5fa0t1bc52npglbq47vkl",
+				"UserPoolId": "ap-southeast-1_KUcID4UCK",
+				"AppClientIDWeb": "6t76sl7mk293jopknijo0oa57r",
+				"AppClientID": "l58g63s11n9303ilbjpr7q6b",
+				"IdentityPoolId": "ap-southeast-1:f673c56e-642a-4ed5-b4ae-aeba8cec8052",
+				"IdentityPoolName": "awsserverlessairline44ea6421_identitypool_44ea6421__deve",
+				"UserPoolName": "awsserverlessairline44ea6421_userpool_44ea6421"
+			},
+			"lastPushDirHash": "iTLlMkbpDjMgUu/iMFWAT3y4mVc="
+		}
+	},
+	"api": {
+		"awsserverlessairline": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
+						"userPoolConfig": {
+							"userPoolId": "authawsserverlessairline44ea6421"
+						}
+					}
+				},
+				"GraphQLAPIIdOutput": "hqcosorygbckvndkm62bi3e2uq",
+				"GraphQLAPIEndpointOutput": "https://d3jaylmtqrd6xpoh7jppzldlfa.appsync-api.ap-southeast-1.amazonaws.com/graphql"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-awsserverlessairline-deve-33206-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apiawsserverlessairline"
+			},
+			"lastPushTimeStamp": "2020-04-15T03:38:11.635Z",
+			"lastPushDirHash": "T5bflzjUTJkUojYrx6Dwkdd7iNY="
+		}
+	}
+}

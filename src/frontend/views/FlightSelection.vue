@@ -246,7 +246,7 @@ export default {
             value: "US"
           }
         ],
-        isCardInvalid: true
+        isCardInvalid: false
       },
       selectedFlight: this.flight
     };

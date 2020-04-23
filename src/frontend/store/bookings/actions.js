@@ -68,7 +68,9 @@ export async function fetchBooking(
 
     let bookings = bookingData.map(booking => new Booking(booking));
 
+    console.log('done');
     console.log(bookings);
+    console.log('done');
 
     commit("SET_BOOKINGS", bookings);
     commit("SET_BOOKING_PAGINATION", paginationToken);

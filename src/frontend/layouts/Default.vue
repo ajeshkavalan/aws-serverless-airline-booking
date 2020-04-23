@@ -57,8 +57,8 @@ export default {
   // name: 'LayoutName',
   data() {
     return {
-      leftDrawer: true,
-      leftDrawerOpen: this.$q.platform.is.desktop
+      //leftDrawer: true,
+      leftDrawerOpen: false //this.$q.platform.is.desktop
     };
   }
 };
